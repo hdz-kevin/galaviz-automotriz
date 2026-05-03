@@ -42,16 +42,16 @@ onUnmounted(() => {
   >
     <div
       class="max-w-[1200px] mx-auto flex items-center justify-between transition-all duration-300"
-      :class="isScrolled ? 'px-6 py-2.5' : 'px-6 py-4'"
+      :class="isScrolled ? 'px-6 py-4' : 'px-6 py-5'"
     >
       <!-- Logo -->
       <a href="#inicio" class="flex items-center gap-2.5 no-underline text-gray-900" @click="closeMobileMenu">
-        <svg class="w-7 h-7 text-accent" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <svg class="w-9 h-9 text-accent" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
           <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
         </svg>
         <div class="flex flex-col leading-tight">
-          <span class="text-lg font-extrabold tracking-wide text-gray-900">GALAVIZ</span>
-          <span class="text-[0.6rem] font-medium tracking-[0.2em] text-text-light uppercase">AUTOMOTRIZ</span>
+          <span class="text-2xl font-extrabold tracking-wide text-gray-900">GALAVIZ</span>
+          <span class="text-[13px] font-semibold tracking-widest text-text-light uppercase">AUTOMOTRIZ</span>
         </div>
       </a>
 
@@ -60,7 +60,7 @@ onUnmounted(() => {
         <li v-for="link in navLinks" :key="link.href">
           <a
             :href="link.href"
-            class="text-sm font-medium text-text-main no-underline relative py-1
+            class="font-medium text-text-main no-underline relative py-1
                    hover:text-accent transition-colors duration-200
                    after:content-[''] after:absolute after:bottom-[-2px] after:left-0 after:w-0 after:h-0.5
                    after:bg-accent after:rounded-sm after:transition-all after:duration-300
@@ -74,14 +74,14 @@ onUnmounted(() => {
       <!-- CTA Button -->
       <a
         href="tel:+526141234567"
-        class="hidden md:inline-flex items-center gap-2 bg-accent text-white
+        class="hidden md:inline-flex items-center gap-2.5 bg-accent text-white
                px-5 py-2.5 rounded-lg text-sm font-semibold no-underline
-               hover:bg-accent-hover hover:-translate-y-0.5 transition-all duration-200"
+               hover:bg-accent-hover transition-all duration-200"
       >
-        <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
           <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/>
         </svg>
-        <span>(614) 123-4567</span>
+        <span class="text-[15px]">(614) 123-4567</span>
       </a>
 
       <!-- Mobile Hamburger -->
@@ -131,7 +131,7 @@ onUnmounted(() => {
                hover:bg-accent-hover transition-colors duration-200"
         @click="closeMobileMenu"
       >
-        <svg class="w-[18px] h-[18px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
           <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/>
         </svg>
         <span>(614) 123-4567</span>
