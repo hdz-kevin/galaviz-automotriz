@@ -3,7 +3,7 @@ import heroBg from '@/assets/images/hero.webp'
 </script>
 
 <template>
-  <section id="inicio" class="relative w-full h-screen min-h-[600px] flex items-center justify-center overflow-hidden">
+  <section id="inicio" class="relative w-full h-screen min-h-150 flex items-center justify-center overflow-hidden">
     <!-- Background Image -->
     <div
       class="absolute inset-0 bg-cover bg-center bg-no-repeat z-0"
@@ -11,28 +11,17 @@ import heroBg from '@/assets/images/hero.webp'
     ></div>
 
     <!-- Overlay -->
-    <div class="absolute inset-0 bg-gradient-to-b from-black/50 via-black/65 to-black/80 z-[1]"></div>
+    <div class="absolute inset-0 bg-linear-to-b from-black/55 via-black/65 to-black/75 z-[1]"></div>
 
     <!-- Content -->
-    <div class="relative z-[2] text-center px-6" style="animation: fadeInUp 0.8s ease-out both;">
-      <!-- Badge -->
-      <span
-        class="inline-block bg-accent/15 border border-accent/40 text-red-400
-               text-xs font-semibold tracking-wider uppercase
-               px-5 py-1.5 rounded-full mb-6 backdrop-blur-sm"
-      >
-        Taller Mecánico Profesional
-      </span>
-
+    <div class="relative z-2 text-center px-6" style="animation: fadeInUp 0.8s ease-out both;">
       <!-- Title -->
-      <h1 class="text-[clamp(2.5rem,7vw,4.5rem)] font-extrabold text-white leading-[1.05] tracking-tight m-0 mb-4">
-        GALAVIZ
-        <br />
-        <span class="font-normal text-[0.5em] tracking-[0.2em] block text-white/75">AUTOMOTRIZ</span>
+      <h1 class="text-[40px] sm:text-6xl font-extrabold text-white leading-[1.05] m-0 mb-7 uppercase">
+        Galaviz Automotriz
       </h1>
 
       <!-- Slogan -->
-      <p class="text-[clamp(1rem,2.5vw,1.2rem)] text-white/70 font-normal max-w-[500px] mx-auto mb-10">
+      <p class="text-lg sm:text-xl text-white  max-w-125 mx-auto mb-11">
         Tu taller de confianza — Servicio profesional garantizado
       </p>
 
@@ -42,8 +31,7 @@ import heroBg from '@/assets/images/hero.webp'
         class="inline-flex items-center gap-2.5 bg-accent text-white
                px-8 py-3.5 rounded-xl text-lg font-semibold no-underline
                shadow-[0_4px_20px_rgba(200,16,46,0.35)]
-               hover:bg-accent-hover hover:-translate-y-0.5
-               hover:shadow-[0_6px_28px_rgba(200,16,46,0.45)]
+               hover:bg-accent-hover
                transition-all duration-200"
       >
         <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -55,10 +43,10 @@ import heroBg from '@/assets/images/hero.webp'
 
     <!-- Scroll Indicator -->
     <div
-      class="absolute bottom-8 left-1/2 z-[2]"
+      class="absolute bottom-8 left-1/2 z-2"
       style="animation: bounce-scroll 2s infinite;"
     >
-      <svg class="w-7 h-7 text-white/50" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <svg class="w-7 h-7 text-white/70" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
         <polyline points="6 9 12 15 18 9"/>
       </svg>
     </div>
