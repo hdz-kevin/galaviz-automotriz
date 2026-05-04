@@ -41,7 +41,7 @@ onUnmounted(() => {
       : 'bg-white/95'"
   >
     <div
-      class="max-w-[1200px] mx-auto flex items-center justify-between transition-all duration-300"
+      class="max-w-[1300px] mx-auto flex items-center justify-between transition-all duration-300"
       :class="isScrolled ? 'px-6 py-4' : 'px-6 py-5'"
     >
       <!-- Logo -->

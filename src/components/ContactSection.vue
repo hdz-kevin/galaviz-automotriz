@@ -19,34 +19,33 @@ onMounted(() => {
 </script>
 
 <template>
-  <section id="contacto" ref="sectionRef" class="py-20 md:py-28 bg-bg-dark text-text-on-dark">
-    <div class="max-w-[1200px] mx-auto px-6">
+  <section id="contacto" ref="sectionRef" class="py-20 md:py-28 bg-white">
+    <div class="max-w-[1300px] mx-auto px-6">
       <!-- Heading -->
       <div class="text-center mb-14">
         <span class="inline-block w-[60px] h-[3px] bg-accent rounded-sm mb-4"></span>
-        <h2 class="text-3xl md:text-4xl font-extrabold text-white tracking-tight mb-3">Contáctanos</h2>
-        <p class="text-lg text-text-on-dark/70">Estamos para servirte</p>
+        <h2 class="text-3xl md:text-4xl font-extrabold text-gray-900 tracking-tight mb-3">Contáctanos</h2>
+        <p class="text-lg text-text-light">Estamos para servirte</p>
       </div>
 
       <!-- Content -->
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-14">
-
         <!-- Info Column -->
         <div
           class="flex flex-col gap-6 transition-all duration-700 ease-out"
           :class="isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-10'"
         >
           <!-- Ubicación -->
-          <div class="flex items-start gap-4 bg-white/5 rounded-xl p-5 border border-white/10">
-            <div class="flex-shrink-0 w-12 h-12 bg-accent/15 rounded-lg flex items-center justify-center">
-              <svg class="w-6 h-6 text-accent" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <div class="flex items-start gap-4 border-b border-b-gray-200 p-5 pb-9">
+            <div class="shrink-0 w-12 h-12 rounded-lg flex items-center justify-center">
+              <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
                 <circle cx="12" cy="10" r="3"/>
               </svg>
             </div>
             <div>
-              <h3 class="text-white font-semibold text-base m-0 mb-1">Ubicación</h3>
-              <p class="text-text-on-dark/70 text-sm m-0 leading-relaxed">
+              <h3 class="font-semibold text-lg m-0 mb-1">Ubicación</h3>
+              <p class="m-0 leading-relaxed">
                 Av. Tecnológico #4500, Col. Las Granjas<br />
                 Chihuahua, Chih. CP 31160
               </p>
@@ -54,50 +53,34 @@ onMounted(() => {
           </div>
 
           <!-- Horario -->
-          <div class="flex items-start gap-4 bg-white/5 rounded-xl p-5 border border-white/10">
-            <div class="flex-shrink-0 w-12 h-12 bg-accent/15 rounded-lg flex items-center justify-center">
-              <svg class="w-6 h-6 text-accent" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <div class="flex items-start gap-4 border-b border-b-gray-200 p-5 pb-9">
+            <div class="shrink-0 w-12 h-12 rounded-lg flex items-center justify-center">
+              <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <circle cx="12" cy="12" r="10"/>
                 <polyline points="12 6 12 12 16 14"/>
               </svg>
             </div>
             <div>
-              <h3 class="text-white font-semibold text-base m-0 mb-1">Horario</h3>
-              <div class="text-text-on-dark/70 text-sm leading-relaxed">
-                <p class="m-0">Lunes a Viernes: <span class="text-white font-medium">8:00 AM – 6:00 PM</span></p>
-                <p class="m-0">Sábado: <span class="text-white font-medium">9:00 AM – 2:00 PM</span></p>
+              <h3 class="font-semibold text-lg  m-0 mb-1">Horario</h3>
+              <div class="text-base  leading-relaxed">
+                <p class="m-0">Lunes a Viernes: <span class="text-white font-medium">8:00 AM - 8:00 PM</span></p>
+                <p class="m-0">Sábado: <span class="text-white font-medium">9:00 AM - 2:00 PM</span></p>
                 <p class="m-0">Domingo: <span class="text-accent font-medium">Cerrado</span></p>
               </div>
             </div>
           </div>
 
           <!-- Teléfono -->
-          <div class="flex items-start gap-4 bg-white/5 rounded-xl p-5 border border-white/10">
-            <div class="flex-shrink-0 w-12 h-12 bg-accent/15 rounded-lg flex items-center justify-center">
-              <svg class="w-6 h-6 text-accent" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <div class="flex items-start gap-4 p-5 pb-9">
+            <div class="shrink-0 w-12 h-12 rounded-lg flex items-center justify-center">
+              <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/>
               </svg>
             </div>
             <div>
-              <h3 class="text-white font-semibold text-base m-0 mb-1">Teléfono</h3>
-              <a href="tel:+526141234567" class="text-accent font-semibold no-underline hover:underline text-sm">
+              <h3 class="font-semibold text-lg se m-0 mb-1">Teléfono</h3>
+              <a href="tel:+526141234567" class="font-semibold no-underline hover:underline text-sm">
                 (614) 123-4567
-              </a>
-            </div>
-          </div>
-
-          <!-- Email -->
-          <div class="flex items-start gap-4 bg-white/5 rounded-xl p-5 border border-white/10">
-            <div class="flex-shrink-0 w-12 h-12 bg-accent/15 rounded-lg flex items-center justify-center">
-              <svg class="w-6 h-6 text-accent" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
-                <polyline points="22,6 12,13 2,6"/>
-              </svg>
-            </div>
-            <div>
-              <h3 class="text-white font-semibold text-base m-0 mb-1">Correo Electrónico</h3>
-              <a href="mailto:contacto@galavizautomotriz.com" class="text-accent font-semibold no-underline hover:underline text-sm">
-                contacto@galavizautomotriz.com
               </a>
             </div>
           </div>
