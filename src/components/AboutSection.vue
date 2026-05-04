@@ -57,12 +57,12 @@ const stats = [
           <h3 class="text-2xl font-bold text-gray-900 mb-4">
             Más de 15 años cuidando tu vehículo
           </h3>
-          <p class="text-text-light leading-relaxed mb-4">
+          <p class="text-text-light leading-loose mb-4">
             En <strong class="text-gray-900">Galaviz Automotriz</strong> nos especializamos en brindar un servicio
             mecánico integral de la más alta calidad. Desde nuestros inicios, hemos atendido a cientos
             de clientes con profesionalismo, honestidad y un compromiso inquebrantable con la excelencia.
           </p>
-          <p class="text-text-light leading-relaxed mb-7">
+          <p class="text-text-light leading-loose mb-7">
             Contamos con más de 15 años de experiencia laboral para
             garantizar que tu vehículo reciba la atención que merece. Nuestro objetivo es que salgas
             del taller con total confianza y tranquilidad.

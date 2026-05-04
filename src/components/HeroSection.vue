@@ -21,7 +21,7 @@ import heroBg from '@/assets/images/hero.webp'
       </h1>
 
       <!-- Slogan -->
-      <p class="text-lg sm:text-xl text-white  max-w-125 mx-auto mb-11">
+      <p class="text-lg sm:text-xl text-white leading-relaxed max-w-125 mx-auto mb-11">
         Tu taller de confianza — Servicio profesional garantizado
       </p>
 
