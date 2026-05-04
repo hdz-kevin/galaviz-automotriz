@@ -27,7 +27,7 @@ const stats = [
 
 <template>
   <section id="nosotros" ref="sectionRef" class="py-20 md:py-28 bg-bg-alt">
-    <div class="max-w-[1200px] mx-auto px-6">
+    <div class="max-w-[1300px] mx-auto px-6">
       <!-- Heading -->
       <div class="text-center mb-14">
         <span class="inline-block w-[60px] h-[3px] bg-accent rounded-sm mb-4"></span>
