@@ -1,5 +1,6 @@
 <script setup>
 import { ref, onMounted } from 'vue'
+import { phone } from '../info';
 
 const sectionRef = ref(null)
 const isVisible = ref(false)
@@ -46,8 +47,7 @@ onMounted(() => {
             <div>
               <h3 class="font-semibold text-lg m-0 mb-1">Ubicación</h3>
               <p class="m-0 leading-loose">
-                Av. Tecnológico #4500, Col. Las Granjas<br />
-                Chihuahua, Chih. CP 31160
+                B. Juárez Ote. 1, Barrio del Fresnillo, 73887 Teziutlán, Pue.
               </p>
             </div>
           </div>
@@ -63,9 +63,12 @@ onMounted(() => {
             <div>
               <h3 class="font-semibold text-lg m-0 mb-1">Horario</h3>
               <div class="leading-loose">
-                <p class="m-0 font-normal">Lunes a Viernes: <span class="font-normal pl-1">8:00 AM - 8:00 PM</span></p>
-                <p class="m-0 font-normal">Sábado: <span class="font-normal pl-1">9:00 AM - 2:00 PM</span></p>
-                <p class="m-0 font-normal">Domingo: <span class="text-accent font-normal pl-1">Cerrado</span></p>
+                <p class="m-0 font-normal">
+                  Lunes a Sábado: <span class="font-normal pl-1">9:00 AM - 7:00 PM</span>
+                </p>
+                <p class="m-0 font-normal">
+                  Domingo: <span class="text-accent font-normal pl-1">Cerrado</span>
+                </p>
               </div>
             </div>
           </div>
@@ -79,8 +82,8 @@ onMounted(() => {
             </div>
             <div class="leading-loose">
               <h3 class="font-semibold text-lg m-0 mb-1">Teléfono</h3>
-              <a href="tel:+526141234567" class="font-medium underline text-sm">
-                (614) 123-4567
+              <a :href="`tel:${phone.number}`" class="font-medium underline text-sm">
+                {{ phone.display }}
               </a>
             </div>
           </div>

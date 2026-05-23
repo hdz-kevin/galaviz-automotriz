@@ -1,6 +1,6 @@
 <script setup>
 import { ref, onMounted } from 'vue'
-import aboutImg from '@/assets/images/about.webp'
+import aboutImg from '@/assets/images/about.jpeg'
 
 const sectionRef = ref(null)
 const isVisible = ref(false)

@@ -1,5 +1,6 @@
 <script setup>
-import heroBg from '@/assets/images/hero.webp'
+import heroBg from '@/assets/images/hero.jpeg'
+import { phone } from '../info';
 </script>
 
 <template>
@@ -11,7 +12,7 @@ import heroBg from '@/assets/images/hero.webp'
     ></div>
 
     <!-- Overlay -->
-    <div class="absolute inset-0 bg-linear-to-b from-black/55 via-black/65 to-black/75 z-[1]"></div>
+    <div class="absolute inset-0 bg-linear-to-b from-black/50 via-black/60 to-black/70 z-1"></div>
 
     <!-- Content -->
     <div class="relative z-2 text-center px-6" style="animation: fadeInUp 0.8s ease-out both;">
@@ -27,7 +28,7 @@ import heroBg from '@/assets/images/hero.webp'
 
       <!-- CTA -->
       <a
-        href="tel:+526141234567"
+        :href="`tel:${phone.number}`"
         class="inline-flex items-center gap-2.5 bg-accent text-white
                px-8 py-3.5 rounded-xl text-lg font-semibold no-underline
                shadow-[0_4px_20px_rgba(200,16,46,0.35)]
@@ -37,7 +38,7 @@ import heroBg from '@/assets/images/hero.webp'
         <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
           <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/>
         </svg>
-        <span>(614) 123-4567</span>
+        <span>{{ phone.display }}</span>
       </a>
     </div>
 
